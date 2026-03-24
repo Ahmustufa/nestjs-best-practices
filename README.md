@@ -57,7 +57,7 @@ Clone or download this repo, then copy/symlink into your skills directory:
 
 ```bash
 # Clone
-git clone https://github.com/<your-username>/nestjs-best-practices-skill.git
+git clone https://github.com/Ahmustufa/nestjs-best-practices-skill.git
 
 # macOS / Linux
 ln -s /path/to/nestjs-best-practices-skill ~/.claude/skills/nestjs-best-practices
@@ -110,44 +110,6 @@ nestjs-best-practices-skill/
     performance.md      # Caching, queues, Fastify
     multi-tenancy.md    # SaaS multi-tenant patterns
     code-style.md       # TypeScript style rules
-```
-
-## Publishing to npm
-
-To publish this skill as an npm package:
-
-### 1. Set up your npm account
-
-```bash
-# Create an account at https://www.npmjs.com/signup if you don't have one
-npm login
-```
-
-### 2. Choose a unique package name
-
-Edit `package.json` and set a unique `name` field. If `nestjs-best-practices-skill` is taken, use a scoped name:
-
-```json
-{
-  "name": "@your-username/nestjs-best-practices-skill"
-}
-```
-
-### 3. Publish
-
-```bash
-# First time
-npm publish --access public
-
-# Subsequent updates — bump version first
-npm version patch  # or minor, major
-npm publish
-```
-
-### 4. Verify
-
-```bash
-npm info nestjs-best-practices-skill
 ```
 
 ## Contributing

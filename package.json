@@ -1,7 +1,7 @@
 {
   "name": "nestjs-best-practices-skill",
   "version": "2.0.0",
-  "description": "Claude Code skill for NestJS production best practices — 24 categories covering architecture, security, testing, performance, and more",
+  "description": "NestJS best practices skill for Claude Code — 24 production-ready rules covering project structure, authentication, validation, TypeORM, testing, security, performance, multi-tenancy, and more",
   "main": "SKILL.md",
   "files": [
     "SKILL.md",
@@ -10,20 +10,46 @@
   ],
   "keywords": [
     "nestjs",
+    "nest",
+    "nest-js",
     "best-practices",
     "claude-code",
     "claude-code-skill",
+    "claude",
+    "ai-coding",
     "typescript",
     "nodejs",
+    "node",
     "backend",
     "api",
-    "architecture"
+    "rest-api",
+    "architecture",
+    "typeorm",
+    "prisma",
+    "jwt",
+    "authentication",
+    "authorization",
+    "validation",
+    "class-validator",
+    "swagger",
+    "openapi",
+    "testing",
+    "security",
+    "microservices",
+    "multi-tenancy",
+    "saas",
+    "production",
+    "express",
+    "fastify"
   ],
   "author": "Ahmed Mustafa (https://github.com/Ahmustufa)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Ahmustufa/nestjs-best-practices-skill"
   },
-  "homepage": ""
+  "homepage": "https://github.com/Ahmustufa/nestjs-best-practices-skill#readme",
+  "bugs": {
+    "url": "https://github.com/Ahmustufa/nestjs-best-practices-skill/issues"
+  }
 }
