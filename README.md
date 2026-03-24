@@ -8,23 +8,44 @@ A comprehensive best practices skill for Claude Code, Cursor, Windsurf, and othe
 npx nestjs-best-practices-skill
 ```
 
-The interactive installer will ask which tool to install for:
+The interactive installer guides you through two steps with arrow-key navigation:
 
+**Step 1 — Pick your editor:**
 ```
-  ╔══════════════════════════════════════════════╗
-  ║   NestJS Best Practices Skill Installer      ║
-  ║   24 production-ready rules for your AI editor  ║
-  ╚══════════════════════════════════════════════╝
+  ╔═══════════════════════════════════════════════════╗
+  ║  ⚡ NestJS Best Practices  Skill Installer        ║
+  ║  24 production-ready rules for your AI editor     ║
+  ╚═══════════════════════════════════════════════════╝
 
-  Where would you like to install?
+  Select your AI code editor:
 
-    1) Claude Code
-    2) Cursor
-    3) Windsurf
-    4) Custom path
-    5) All supported tools
+  ▶ ◆  Claude Code            ← highlighted, move with ↑ ↓
+      ⬡  Cursor
+      ◈  Windsurf
+      ★  All supported tools
+      …  Custom path
 
-  Enter your choice (number):
+  ↑/↓ navigate  ⏎ select
+```
+
+**Step 2 — Pick install scope:**
+```
+  Install scope:
+
+  ▶ 🌐  Global (available in all projects)
+      📁  Local (current project only)
+
+  ↑/↓ navigate  ⏎ select
+```
+
+**Done:**
+```
+  ✓ Installed for Claude Code → ~/.claude/skills/nestjs-best-practices
+
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ Installation complete!
+  Restart your editor to activate the skill.
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
 ## What It Does
