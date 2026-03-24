@@ -1,10 +1,35 @@
-# NestJS Best Practices — Claude Code Skill
+# NestJS Best Practices — AI IDE Skill
 
-A comprehensive [Claude Code skill](https://docs.anthropic.com/en/docs/claude-code/skills) that makes Claude apply NestJS production best practices when writing, reviewing, or refactoring code.
+A comprehensive best practices skill for Claude Code, Cursor, Windsurf, and other agentic CLI tools. Makes your AI assistant act as a senior NestJS architect when writing, reviewing, or refactoring code.
+
+## Quick Install
+
+```bash
+npx nestjs-best-practices-skill
+```
+
+The interactive installer will ask which tool to install for:
+
+```
+  ╔══════════════════════════════════════════════╗
+  ║   NestJS Best Practices Skill Installer      ║
+  ║   24 production-ready rules for your AI IDE   ║
+  ╚══════════════════════════════════════════════╝
+
+  Where would you like to install?
+
+    1) Claude Code
+    2) Cursor
+    3) Windsurf
+    4) Custom path
+    5) All supported tools
+
+  Enter your choice (number):
+```
 
 ## What It Does
 
-When triggered, Claude acts as a senior NestJS architect and automatically applies 24 categories of best practices:
+When triggered, your AI assistant automatically applies 24 categories of production best practices:
 
 | Category | What It Enforces |
 |----------|-----------------|
@@ -33,48 +58,27 @@ When triggered, Claude acts as a senior NestJS architect and automatically appli
 | Multi-Tenancy | TenantContext, RLS, tenantId guard |
 | Code Style | No `any`, explicit types, 300-line limit |
 
-## Installation
+## Manual Installation
 
-### Option 1: Install from npm
-
-```bash
-npm install -g nestjs-best-practices-skill
-```
-
-Then symlink into your Claude Code skills directory:
-
-```bash
-# macOS / Linux
-ln -s $(npm root -g)/nestjs-best-practices-skill ~/.claude/skills/nestjs-best-practices
-
-# Windows (PowerShell as Administrator)
-New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.claude\skills\nestjs-best-practices" -Target "$(npm root -g)\nestjs-best-practices-skill"
-```
-
-### Option 2: Manual installation
-
-Clone or download this repo, then copy/symlink into your skills directory:
+If you prefer not to use npx:
 
 ```bash
 # Clone
 git clone https://github.com/Ahmustufa/nestjs-best-practices-skill.git
 
-# macOS / Linux
+# Copy to Claude Code
+cp -r nestjs-best-practices-skill ~/.claude/skills/nestjs-best-practices
+
+# Or symlink (macOS/Linux)
 ln -s /path/to/nestjs-best-practices-skill ~/.claude/skills/nestjs-best-practices
 
-# Windows (PowerShell as Administrator)
+# Or symlink (Windows PowerShell as Admin)
 New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.claude\skills\nestjs-best-practices" -Target "C:\path\to\nestjs-best-practices-skill"
-```
-
-### Option 3: Direct copy
-
-```bash
-cp -r nestjs-best-practices-skill ~/.claude/skills/nestjs-best-practices
 ```
 
 ## Verification
 
-After installation, restart Claude Code. The skill should appear in the available skills list. You can verify by asking Claude:
+After installation, restart your IDE. For Claude Code, verify by asking:
 
 > "What NestJS best practices skills do you have available?"
 
@@ -82,34 +86,34 @@ After installation, restart Claude Code. The skill should appear in the availabl
 
 ```
 nestjs-best-practices-skill/
-  SKILL.md              # Skill metadata and category index
-  AGENTS.md             # Full compiled rules with all code examples
-  README.md             # This file
+  bin/install.js          # Interactive CLI installer
+  SKILL.md                # Skill metadata and category index
+  AGENTS.md               # Full compiled rules with all code examples
   rules/
-    structure.md        # Project structure
-    modules.md          # Module patterns
-    middleware.md        # Middleware patterns
-    controllers.md      # Controller rules
-    services.md         # Service rules
-    custom-providers.md # DI patterns and scopes
-    custom-decorators.md# Param and composed decorators
-    dto-validation.md   # Validation and serialization
-    typeorm.md          # Database and migrations
-    auth.md             # Authentication and authorization
-    config.md           # Configuration management
+    structure.md          # Project structure
+    modules.md            # Module patterns
+    middleware.md          # Middleware patterns
+    controllers.md        # Controller rules
+    services.md           # Service rules
+    custom-providers.md   # DI patterns and scopes
+    custom-decorators.md  # Param and composed decorators
+    dto-validation.md     # Validation and serialization
+    typeorm.md            # Database and migrations
+    auth.md               # Authentication and authorization
+    config.md             # Configuration management
     security-hardening.md # Helmet, CORS, rate limiting
-    error-handling.md   # Exception filters
-    interceptors.md     # Response transform, logging
-    logging.md          # Structured logging
-    lifecycle.md        # Lifecycle hooks, graceful shutdown
-    testing.md          # Unit and e2e testing
-    openapi.md          # Swagger/OpenAPI integration
-    health-checks.md    # Terminus health indicators
-    scheduling-events.md# Cron and event emitter
-    file-upload.md      # Upload validation and streaming
-    performance.md      # Caching, queues, Fastify
-    multi-tenancy.md    # SaaS multi-tenant patterns
-    code-style.md       # TypeScript style rules
+    error-handling.md     # Exception filters
+    interceptors.md       # Response transform, logging
+    logging.md            # Structured logging
+    lifecycle.md          # Lifecycle hooks, graceful shutdown
+    testing.md            # Unit and e2e testing
+    openapi.md            # Swagger/OpenAPI integration
+    health-checks.md      # Terminus health indicators
+    scheduling-events.md  # Cron and event emitter
+    file-upload.md        # Upload validation and streaming
+    performance.md        # Caching, queues, Fastify
+    multi-tenancy.md      # SaaS multi-tenant patterns
+    code-style.md         # TypeScript style rules
 ```
 
 ## Contributing

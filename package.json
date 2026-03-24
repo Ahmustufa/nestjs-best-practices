@@ -1,12 +1,16 @@
 {
   "name": "nestjs-best-practices-skill",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "NestJS best practices skill for Claude Code — 24 production-ready rules covering project structure, authentication, validation, TypeORM, testing, security, performance, multi-tenancy, and more",
   "main": "SKILL.md",
+  "bin": {
+    "nestjs-best-practices-skill": "bin/install.js"
+  },
   "files": [
     "SKILL.md",
     "AGENTS.md",
-    "rules/"
+    "rules/",
+    "bin/"
   ],
   "keywords": [
     "nestjs",
