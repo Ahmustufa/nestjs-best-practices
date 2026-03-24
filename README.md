@@ -1,4 +1,4 @@
-# NestJS Best Practices — AI IDE Skill
+# NestJS Best Practices — AI Code Editor Skill
 
 A comprehensive best practices skill for Claude Code, Cursor, Windsurf, and other agentic CLI tools. Makes your AI assistant act as a senior NestJS architect when writing, reviewing, or refactoring code.
 
@@ -13,7 +13,7 @@ The interactive installer will ask which tool to install for:
 ```
   ╔══════════════════════════════════════════════╗
   ║   NestJS Best Practices Skill Installer      ║
-  ║   24 production-ready rules for your AI IDE   ║
+  ║   24 production-ready rules for your AI editor  ║
   ╚══════════════════════════════════════════════╝
 
   Where would you like to install?
@@ -63,22 +63,14 @@ When triggered, your AI assistant automatically applies 24 categories of product
 If you prefer not to use npx:
 
 ```bash
-# Clone
 git clone https://github.com/Ahmustufa/nestjs-best-practices-skill.git
-
-# Copy to Claude Code
-cp -r nestjs-best-practices-skill ~/.claude/skills/nestjs-best-practices
-
-# Or symlink (macOS/Linux)
-ln -s /path/to/nestjs-best-practices-skill ~/.claude/skills/nestjs-best-practices
-
-# Or symlink (Windows PowerShell as Admin)
-New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.claude\skills\nestjs-best-practices" -Target "C:\path\to\nestjs-best-practices-skill"
+cd nestjs-best-practices-skill
+node bin/install.js
 ```
 
 ## Verification
 
-After installation, restart your IDE. For Claude Code, verify by asking:
+After installation, restart your editor. For Claude Code, verify by asking:
 
 > "What NestJS best practices skills do you have available?"
 

@@ -213,7 +213,7 @@ function banner() {
   console.log();
   console.log(`  ${c.cyan}${c.bold}╔═══════════════════════════════════════════════════╗${c.reset}`);
   console.log(`  ${c.cyan}${c.bold}║${c.reset}  ${c.magenta}${c.bold}⚡ NestJS Best Practices${c.reset}  ${c.dim}Skill Installer${c.reset}      ${c.cyan}${c.bold}║${c.reset}`);
-  console.log(`  ${c.cyan}${c.bold}║${c.reset}  ${c.dim}24 production-ready rules for your AI IDE${c.reset}       ${c.cyan}${c.bold}║${c.reset}`);
+  console.log(`  ${c.cyan}${c.bold}║${c.reset}  ${c.dim}24 production-ready rules for your AI editor${c.reset}    ${c.cyan}${c.bold}║${c.reset}`);
   console.log(`  ${c.cyan}${c.bold}╚═══════════════════════════════════════════════════╝${c.reset}`);
   console.log();
 }
@@ -223,7 +223,7 @@ async function main() {
   banner();
 
   // Step 1: Select IDE
-  const ideIndex = await select('Select your AI IDE:', IDE_OPTIONS);
+  const ideIndex = await select('Select your AI code editor:', IDE_OPTIONS);
   const ide = IDE_OPTIONS[ideIndex];
 
   // Step 2: Handle custom path
@@ -283,7 +283,7 @@ async function main() {
   if (successCount > 0) {
     console.log(`  ${c.green}${c.bold}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${c.reset}`);
     console.log(`  ${c.green}${c.bold}✓ Installation complete!${c.reset}`);
-    console.log(`  ${c.dim}Restart your IDE to activate the skill.${c.reset}`);
+    console.log(`  ${c.dim}Restart your editor to activate the skill.${c.reset}`);
     console.log(`  ${c.green}${c.bold}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${c.reset}`);
     console.log();
     console.log(`  ${c.dim}What's included:${c.reset}`);
