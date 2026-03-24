@@ -1,0 +1,29 @@
+{
+  "name": "nestjs-best-practices-skill",
+  "version": "2.0.0",
+  "description": "Claude Code skill for NestJS production best practices — 24 categories covering architecture, security, testing, performance, and more",
+  "main": "SKILL.md",
+  "files": [
+    "SKILL.md",
+    "AGENTS.md",
+    "rules/"
+  ],
+  "keywords": [
+    "nestjs",
+    "best-practices",
+    "claude-code",
+    "claude-code-skill",
+    "typescript",
+    "nodejs",
+    "backend",
+    "api",
+    "architecture"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": ""
+}
